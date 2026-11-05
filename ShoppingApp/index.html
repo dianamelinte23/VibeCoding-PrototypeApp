@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7ef">
+    <meta name="description" content="Browse fresh fruit, manage your cart, and try a mock checkout.">
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main sidebar">
+        <a class="brand" href="#products" aria-label="Fruit Shop home">
+          <span class="brand-icon" aria-hidden="true">🍋</span>
+          <span class="brand-name">Fruit Shop</span>
+          <span class="brand-compact" aria-hidden="true">F</span>
+        </a>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a class="nav-link" href="#products" data-route="products" aria-label="Products">
+            <span class="nav-emoji" aria-hidden="true">🍎</span><span class="nav-abbr" aria-hidden="true">P</span><span class="nav-label">Products</span>
+          </a>
+          <a class="nav-link" href="#product-details" data-route="product-details" aria-label="ProductDetails">
+            <span class="nav-emoji" aria-hidden="true">🔎</span><span class="nav-abbr" aria-hidden="true">D</span><span class="nav-label">ProductDetails</span>
+          </a>
+          <a class="nav-link" href="#shopping-cart" data-route="shopping-cart" aria-label="ShoppingCart">
+            <span class="nav-emoji" aria-hidden="true">🛒</span><span class="nav-abbr" aria-hidden="true">C</span><span class="nav-label">ShoppingCart</span>
+            <span class="cart-count" id="nav-cart-count" aria-label="0 items in cart">0</span>
+          </a>
+          <a class="nav-link" href="#checkout" data-route="checkout" aria-label="Checkout">
+            <span class="nav-emoji" aria-hidden="true">✅</span><span class="nav-abbr" aria-hidden="true">O</span><span class="nav-label">Checkout</span>
+          </a>
+        </nav>
+        <p class="sidebar-note">Fresh picks, simply.</p>
+      </aside>
+
+      <main class="main-content" id="main-content" tabindex="-1">
+        <div class="notice" id="app-notice" role="status" aria-live="polite" hidden></div>
+        <div id="page-content"></div>
+      </main>
+    </div>
+  </body>
+</html>

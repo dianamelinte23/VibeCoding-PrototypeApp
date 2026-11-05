@@ -1,0 +1,29 @@
+FRUIT SHOP PROTOTYPE - PRODUCT DETAILS PAGE
+
++----------------------+----------------------------------------------+
+| FRUIT SHOP           | Product details                  [Cart: 2]  |
+|   Products           |                                              |
+| > ProductDetails     | [< Back to Products]                         |
+|   ShoppingCart (2)   |                                              |
+|   Checkout           | +----------------------+  Red Apples        |
+|                      | |                      |  Crisp, sweet apples|
+|                      | |       [apple]       |  for snacking or    |
+|                      | |                      |  baking.            |
+|                      | +----------------------+                    |
+|                      |                         EUR 2.49 per kg     |
+|                      |                         Quantity            |
+|                      |                         [-] [ 1 ] [+]       |
+|                      |                         [Add to cart]        |
++----------------------+----------------------------------------------+
+
+Display the selected product's emoji, name, full description, price,
+and unit. The quantity starts at 1 and cannot be less than 1.
+
+On narrow screens, stack the image/emoji above the description and
+controls.
+
+Unknown product state:
+
+Product not found
+We couldn't find that fruit.
+[Back to Products]

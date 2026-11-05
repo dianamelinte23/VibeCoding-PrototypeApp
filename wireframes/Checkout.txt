@@ -1,0 +1,45 @@
+FRUIT SHOP PROTOTYPE - CHECKOUT PAGE
+
+Checkout with products
+
++----------------------+----------------------------------------------+
+| FRUIT SHOP           | Checkout                                     |
+|   Products           |                                              |
+|   ProductDetails     | Order summary                                |
+|   ShoppingCart (2)   | -------------------------------------------- |
+| > Checkout           | Red Apples       2 kg              EUR 4.98 |
+|                      | Strawberries     1 pack            EUR 4.99 |
+|                      |                                              |
+|                      | Total                             EUR 9.97 |
+|                      |                                              |
+|                      | [Back to Shopping Cart] [Process Order]     |
+|                      |                                              |
+|                      | Mock checkout: no payment is taken.          |
++----------------------+----------------------------------------------+
+
+The summary reflects the cart's current quantities and totals.
+Process Order is a mock action: it takes no payment, shows a
+confirmation, and clears the cart.
+
+
+Order confirmation
+
++----------------------+----------------------------------------------+
+| FRUIT SHOP           | Order complete                               |
+|   Products           |                                              |
+|   ProductDetails     | Your sample order has been processed.        |
+|   ShoppingCart       | No payment was taken.                        |
+| > Checkout           |                                              |
+|                      | [Continue shopping]                          |
++----------------------+----------------------------------------------+
+
+
+Empty checkout
+
++----------------------+----------------------------------------------+
+| FRUIT SHOP           | Checkout                                     |
+|   Products           |                                              |
+|   ProductDetails     | There are no items to process.               |
+|   ShoppingCart       |                                              |
+| > Checkout           | [Browse Products]                            |
++----------------------+----------------------------------------------+

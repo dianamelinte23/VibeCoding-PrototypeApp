@@ -1,0 +1,38 @@
+FRUIT SHOP PROTOTYPE - SHOPPING CART PAGE
+
+Cart with products
+
++----------------------+----------------------------------------------+
+| FRUIT SHOP           | Shopping Cart                    [2 items]  |
+|   Products           |                                              |
+|   ProductDetails     | Product          Qty       Unit       Line    |
+| > ShoppingCart (2)   | -------------------------------------------- |
+|   Checkout           | [apple] Red Apples [-] 2 [+] EUR 2.49/kg     |
+|                      |                                  EUR 4.98    |
+|                      |                   [Remove]                   |
+|                      | [berry] Strawberries [-] 1 [+] EUR 4.99/pack |
+|                      |                                  EUR 4.99    |
+|                      |                   [Remove]                   |
+|                      |                                              |
+|                      | Order total:                    EUR 9.97    |
+|                      | [Continue shopping]     [Go to Checkout]    |
++----------------------+----------------------------------------------+
+
+Changing quantity or removing a product updates its line total and
+the order total. Quantities are whole numbers of at least 1.
+
+At narrow widths, stack each item as a card/row so the shopper can
+read and use all controls without horizontal scrolling.
+
+Cart data persists across navigation and reloads using localStorage.
+
+
+Empty cart
+
++----------------------+----------------------------------------------+
+| FRUIT SHOP           | Shopping Cart                                |
+|   Products           |                                              |
+|   ProductDetails     | Your cart is empty.                          |
+| > ShoppingCart       |                                              |
+|   Checkout           | [Browse Products]                            |
++----------------------+----------------------------------------------+

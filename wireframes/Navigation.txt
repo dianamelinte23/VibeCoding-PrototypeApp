@@ -1,0 +1,73 @@
+FRUIT SHOP PROTOTYPE - NAVIGATION WIREFRAMES
+
+Expanded left navigation (viewport 300 CSS px or wider)
+
++----------------------+----------------------------------------------+
+| FRUIT SHOP           |                                              |
+|                      |                 PAGE CONTENT                 |
+| > Products           |                                              |
+|   ProductDetails     |                                              |
+|   ShoppingCart (2)   |                                              |
+|   Checkout           |                                              |
+|                      |                                              |
++----------------------+----------------------------------------------+
+  Fixed-width sidebar     Remaining width; content can reflow
+
+The active page is marked with >. The optional (2) badge shows the
+number of distinct products in the cart, not their combined quantity.
+The sidebar stays at the left on wider screens.
+
+
+Collapsed left navigation (viewport narrower than 300 CSS px)
+
++---+--------------------------------------------+
+| F |                 PAGE CONTENT              |
++---+--------------------------------------------+
+| P | Main content reflows into the narrow space |
+| D |                                            |
+| C |                                            |
+| O |                                            |
++---+--------------------------------------------+
+
+P = Products
+D = ProductDetails
+C = ShoppingCart
+O = Checkout
+F = Fruit Shop
+
+Each abbreviated link keeps its full accessible name, has a visible
+focus state, and indicates the current page. The main page content uses
+the remaining width and must remain usable.
+
+
+Navigation flow
+
+                         select product
+                    +----------------------+
+                    |                      v
+              +----------+           +----------------+
+              | Products |           | ProductDetails |
+              +----------+           +----------------+
+                   |                       |
+           add to cart                 add to cart
+                   +----------+------------+
+                              v
+                       +-------------+
+                       | ShoppingCart|
+                       +-------------+
+                              |
+                         review order
+                              v
+                       +----------+
+                       | Checkout |
+                       +----------+
+                              |
+                      Process Order
+                              v
+                    Mock confirmation
+                    and clear the cart
+
+The left navigation is available on every page, allowing direct
+navigation among all four destinations. Selecting a product carries
+its ID to ProductDetails. Browser back and forward should work with
+the chosen navigation approach.

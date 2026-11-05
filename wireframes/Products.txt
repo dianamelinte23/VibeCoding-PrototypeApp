@@ -1,0 +1,35 @@
+FRUIT SHOP PROTOTYPE - PRODUCTS PAGE
+
++----------------------+----------------------------------------------+
+| FRUIT SHOP           | Products                         [Cart: 2]  |
+| > Products           | Browse fresh fruit                           |
+|   ProductDetails     |                                              |
+|   ShoppingCart (2)   | +------------------+  +------------------+   |
+|   Checkout           | |       [apple]    |  |      [banana]    |   |
+|                      | | Red Apples       |  | Bananas          |   |
+|                      | | EUR 2.49 / kg    |  | EUR 1.79 / kg    |   |
+|                      | | Qty [-] 1 [+]    |  | Qty [-] 1 [+]    |   |
+|                      | | [Add to cart]    |  | [Add to cart]    |   |
+|                      | | [Details]        |  | [Details]        |   |
+|                      | +------------------+  +------------------+   |
+|                      |                                              |
+|                      | +------------------+  ... remaining fruits  |
+|                      | | [orange]         |                         |
+|                      | | Oranges          |                         |
+|                      | | EUR 2.29 / kg    |                         |
+|                      | | Qty [-] 1 [+]    |                         |
+|                      | | [Add to cart]    |                         |
+|                      | | [Details]        |                         |
+|                      | +------------------+                         |
++----------------------+----------------------------------------------+
+
+Show all ten sample products with emoji, name, price, and unit. The
+layout above illustrates the repeated product-card pattern.
+
+On narrow screens, the cards flow into fewer columns or a single
+column. Controls remain readable and usable.
+
+After adding an item, show brief feedback, for example:
+"Red Apples added to cart."
+
+Selecting [Details] opens ProductDetails for that product.
